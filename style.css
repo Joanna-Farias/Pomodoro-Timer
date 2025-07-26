@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap');
+
+:root{
+    --brown: #B66C11;
+    --light_brown: #F6EBD5;
+    --dark_brown: #B16C45;
+    --darker_brown: #9a5a3a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/imgs/background-img.png);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+}
+
+.timer-pomodoro{
+    background-color: var(--light_brown);
+    padding: 2em 3em;
+    border-radius: .3em;
+    font-family: "VT323", monospace;
+    color: var(--brown);
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    margin-bottom: 1.3em;
+    margin-top: 0.5em;
+    font-size: 45px;
+}
+
+.cat{
+    width: 10em;
+    position: absolute;
+    top: -5em;
+    left: 85%;
+    transform: translate(-50%);
+    z-index: 10;
+}
+
+.set-tempo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.set-tempo h3{
+    font-weight: lighter;
+}
+
+.timer{
+    color: white;
+    font-size: 10em;
+    margin-bottom: 25px;
+    font-variant-numeric: tabular-nums;
+}
+
+.button-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.button-wrapper button {
+    background-color: var(--dark_brown);
+    color: var(--light_brown);
+    border: none;
+    box-shadow: 1px 1px #787878;
+    padding: 0.8em 1.3em;
+    border-radius: 0.3em;
+    font-family: "VT323", monospace;
+    font-size: 1.7em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-wrapper button:hover {
+    background-color: var(--darker_brown);
+}
